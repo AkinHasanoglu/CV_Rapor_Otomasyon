@@ -1,0 +1,16 @@
+{
+  "name": "CV Hazırlama Otomasyonu",
+  "build": { "dockerfile": "Dockerfile" },
+  "customizations": {
+    "vscode": {
+      "settings": {},
+      "extensions": [
+        "dbaeumer.vscode-eslint",
+        "esbenp.prettier-vscode"
+      ]
+    }
+  },
+  "remoteUser": "node",
+  "workspaceMount": "source=${localWorkspaceFolder},target=/CV_SaaS,type=bind",
+  "workspaceFolder": "/CV_SaaS"
+}
